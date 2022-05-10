@@ -5,10 +5,8 @@ on:
     types:
       - opened
   push:
-    branches:
-      - '**'
     tags-ignore:
-      - 'v*'
+      - '**'
   workflow_call:
 
 jobs:
