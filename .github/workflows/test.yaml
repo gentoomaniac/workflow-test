@@ -2,11 +2,9 @@ name: tests
 
 on:
   pull_request:
-    types:
-      - opened
   push:
-    tags-ignore:
-      - '**'
+    branches:
+      - 'master'
   workflow_call:
 
 jobs:
