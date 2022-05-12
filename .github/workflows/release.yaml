@@ -10,6 +10,8 @@ jobs:
     uses: ./.github/workflows/test.yaml
 
   release:
+    needs:
+      - run-tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
